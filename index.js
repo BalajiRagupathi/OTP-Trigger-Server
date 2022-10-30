@@ -19,4 +19,6 @@ app.use("/api/otp",messageRouter);
 // -----------------Routing End---------------------
 
 // Server listening port
-app.listen(port || 3001);
+app.listen(port || 3001,() => {
+    console.log(port)
+});
